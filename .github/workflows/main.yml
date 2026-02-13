@@ -1,4 +1,4 @@
-name: Quote of the day
+name: Update Quote (Gemini 3)
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -23,34 +23,32 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install google-genai
 
-      - name: Run quote generator
+      - name: Generate and Update Quote
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python <<EOF
+          from google import genai
           import os
-          import requests
           import re
           from datetime import datetime
 
-          GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+          api_key = os.getenv("GEMINI_API_KEY")
 
-          def get_quote():
-              url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
-              payload = {
-                  "contents": [{
-                      "parts": [{
-                          "text": "Generate one short motivational quote for a software engineer. Max 20 words."
-                      }]
-                  }]
-              }
-              r = requests.post(url, json=payload)
-              data = r.json()
-              return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+          client = genai.Client(api_key=api_key)
 
-          quote = get_quote()
+          try:
+              response = client.models.generate_content(
+                  model="gemini-3-flash-preview",
+                  contents="Generate one short motivational quote for a software engineer. Max 20 words."
+              )
+
+              quote = response.text.strip() if response.text else "Keep building. Keep learning."
+          except Exception as e:
+              print("Gemini error:", e)
+              quote = "Keep building. Keep learning."
 
           with open("README.md", "r", encoding="utf-8") as f:
               content = f.read()
@@ -72,10 +70,10 @@ jobs:
               f.write(updated)
           EOF
 
-      - name: Commit changes
+      - name: Commit changes if any
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add README.md
-          git commit -m "🤖 Auto update quote" || exit 0
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 Update quote via Gemini 3"
           git push

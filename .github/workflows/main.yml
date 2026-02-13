@@ -53,10 +53,11 @@ jobs:
               content = f.read()
 
           new_block = f"""<!--QUOTE_START-->
-          **{quote}**
-
-          >_Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}_
+          <h3>✨ " {quote} "</h3>
+          
+          <em>Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}</em>
           <!--QUOTE_END-->"""
+
 
           updated = re.sub(
               r"<!--QUOTE_START-->.*?<!--QUOTE_END-->",

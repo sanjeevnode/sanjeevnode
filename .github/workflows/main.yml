@@ -1,9 +1,8 @@
 name: Update Quote (Gemini 3)
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "30 3 * * *"
   workflow_dispatch:
 
 permissions:

@@ -6,6 +6,13 @@ Building scalable applications, production-ready systems, and clean architecture
 </p>
 
 ---
+## 🧠 Quote of the Day
+
+<!--QUOTE_START-->
+Loading quote...
+<!--QUOTE_END-->
+
+---
 
 ## 👨‍💻 About Me
 

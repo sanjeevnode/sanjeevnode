@@ -53,7 +53,7 @@ jobs:
               content = f.read()
 
           new_block = f"""<!--QUOTE_START-->
-          > {quote}
+          **{quote}**
 
           _Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}_
           <!--QUOTE_END-->"""

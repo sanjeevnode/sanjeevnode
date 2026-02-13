@@ -45,13 +45,14 @@ I am a full-stack developer focused on building performant web and mobile applic
 
 ## 📊 GitHub Statistics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sanjeevnode&show_icons=true&theme=default" />
-</p>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sanjeevnode&theme=radical" alt="GitHub Streak" />
+</div>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sanjeevnode&hide_border=true" />
-</p>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sanjeevnode&theme=redical&hide_border=true&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" width="100%" alt="Activity Graph">
+</div>
 
 ---
 

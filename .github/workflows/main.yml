@@ -1,0 +1,81 @@
+name: Quote of the day
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run quote generator
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python <<EOF
+          import os
+          import requests
+          import re
+          from datetime import datetime
+
+          GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+          def get_quote():
+              url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}"
+              payload = {
+                  "contents": [{
+                      "parts": [{
+                          "text": "Generate one short motivational quote for a software engineer. Max 20 words."
+                      }]
+                  }]
+              }
+              r = requests.post(url, json=payload)
+              data = r.json()
+              return data["candidates"][0]["content"]["parts"][0]["text"].strip()
+
+          quote = get_quote()
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          new_block = f"""<!--QUOTE_START-->
+          > {quote}
+
+          _Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}_
+          <!--QUOTE_END-->"""
+
+          updated = re.sub(
+              r"<!--QUOTE_START-->.*?<!--QUOTE_END-->",
+              new_block,
+              content,
+              flags=re.DOTALL
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(updated)
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "🤖 Auto update quote" || exit 0
+          git push

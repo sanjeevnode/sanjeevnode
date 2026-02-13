@@ -55,7 +55,7 @@ jobs:
           new_block = f"""<!--QUOTE_START-->
           **{quote}**
 
-          _Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}_
+          >_Last updated: {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}_
           <!--QUOTE_END-->"""
 
           updated = re.sub(

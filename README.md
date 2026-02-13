@@ -16,6 +16,17 @@ Building scalable applications, production-ready systems, and clean architecture
 
 ---
 
+## 📊 Analytics 
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sanjeevnode&theme=github_dark" alt="Profile Summary" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sanjeevnode&theme=github_dark" alt="Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sanjeevnode&theme=github_dark" alt="Commits" />
+</div>
+
 ## 👨‍💻 About Me
 
 I am a full-stack developer focused on building performant web and mobile applications with strong backend architecture and cloud deployment practices.

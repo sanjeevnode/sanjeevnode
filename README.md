@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Sanjeev%20Kumar%20Singh&reversal=false&textBg=false&fontSize=48&fontAlignY=40&stroke=000000"/>
+  <a href="https://github.com/sanjeevnode" target="_blank">
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Sanjeev%20Kumar%20Singh&reversal=false&textBg=false&fontSize=48&fontAlignY=40&stroke=000000"/>
+  </a>
 </div>
 
 <!-- <h1 align="center">Sanjeev Kumar Singh</h1> -->

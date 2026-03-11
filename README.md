@@ -1,4 +1,8 @@
-<h1 align="center">Sanjeev Kumar Singh</h1>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Sanjeev%20Kumar%20Singh&reversal=false&textBg=false&fontSize=48&fontAlignY=40&stroke=000000"/>
+</div>
+
+<!-- <h1 align="center">Sanjeev Kumar Singh</h1> -->
 <h3 align="center">
   🚀 Full-Stack Developer | 🤖 AI & Data Science | ☁️ Cloud & DevOps Engineer
 </h3>
@@ -120,6 +124,10 @@ I build performant, scalable systems across web, AI, and cloud platforms.
 
 ---
 
-<p align="center">
+<!-- <p align="center">
   <b>⚡ Engineering scalable and intelligent systems.</b>
-</p>
+</p> -->
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=⚡%20Engineering%20scalable%20and%20intelligent%20systems.&reversal=false&textBg=false&fontSize=32&fontAlignY=70&stroke=000000&section=footer"/>
+</div>

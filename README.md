@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/sanjeevnode" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Sanjeev%20Kumar%20Singh&reversal=false&textBg=false&fontSize=48&fontAlignY=40&stroke=000000"/>
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=Sanjeev%20Kumar%20Singh&reversal=false&textBg=false&fontSize=48&fontAlignY=40&stroke=000000" width="100%"/>
   </a>
 </div>
 
@@ -43,19 +43,15 @@
 <br/><br/>
 
 <!-- Activity Graph Full Width -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sanjeevnode&theme=redical&hide_border=true&area=true" width="100%"/>
-
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=sanjeevnode&theme=redical&hide_border=false&area=true" width="100%"/>
 <br/><br/>
-
-<!-- Language + Commit Distribution -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sanjeevnode&theme=github_dark" width="48%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sanjeevnode&theme=github_dark" width="48%" />
-
-<br/><br/>
-
 <!-- Streak + Contributions -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sanjeevnode&theme=radical" width="48%" />
-
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sanjeevnode&theme=radical" width="100%" />
+<br/><br/>
+<img src="https://github-readme-stats.shion.dev/api/top-langs/?username=sanjeevnode&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" width="100%" />
+<br/><br/>
+<img src="https://github-readme-stats.shion.dev/api?username=sanjeevnode&theme=dark&hide_border=false&include_all_commits=true&count_private=true" width="100%" />
+<br/><br/>
 </div>
 
 ---
@@ -131,5 +127,5 @@ I build performant, scalable systems across web, AI, and cloud platforms.
 </p> -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=⚡%20Engineering%20scalable%20and%20intelligent%20systems.&reversal=false&textBg=false&fontSize=32&fontAlignY=70&stroke=000000&section=footer"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=⚡%20Engineering%20scalable%20and%20intelligent%20systems.&reversal=false&textBg=false&fontSize=32&fontAlignY=70&stroke=000000&section=footer" width="100%"/>
 </div>

@@ -38,7 +38,7 @@
 <div align="center">
 
 <!-- Top Summary Card -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sanjeevnode&theme=github_dark" width="100%" />
+<!-- <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sanjeevnode&theme=github_dark" width="100%" /> -->
 
 <br/><br/>
 

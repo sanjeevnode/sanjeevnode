@@ -38,19 +38,9 @@
 <div align="center">
 
 <!-- Top Summary Card -->
-<!-- <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sanjeevnode&theme=github_dark" width="100%" /> -->
-
-<br/><br/>
-
-<!-- Activity Graph Full Width -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sanjeevnode&theme=redical&hide_border=false&area=true" width="100%"/>
-<br/><br/>
-<!-- Streak + Contributions -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sanjeevnode&theme=radical" width="100%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sanjeevnode&theme=github_dark" width="100%" /> 
 <br/><br/>
 <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=sanjeevnode&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" width="100%" />
-<br/><br/>
-<img src="https://github-readme-stats.shion.dev/api?username=sanjeevnode&theme=dark&hide_border=false&include_all_commits=true&count_private=true" width="100%" />
 <br/><br/>
 </div>
 
